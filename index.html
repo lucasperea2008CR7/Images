@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b696b2a93b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="Logo.jfif" alt="Logo" class="logo">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p>Self-learned programmer</p>
+            <h1>Hi, I'm <span>Lucas</span><br>Perea from the Netherlands</h1>
+          </div>
+        </div>
+    </div>
+    <!-- -----about--------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Image 3.jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! My name is Lucas  and I am a self-learned programmer with extensive experience in creating landing pages using HTML and CSS. I am passionate about creating functional and responsive landing pages. I am also learning Python now and have a bit experience with that language. The things that I love to do are programming, playing football and playing videogames.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Frontend Web Development</span><br>HTML/CSS</li>
+                <li><span>Backend Web Development</span><br>Python</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Fiverr</span><br>I am now freelancing on Fiverr</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>High School</span><br>Sint-Maartenscollege 3rd year VWO</li>
+                <li><span>FreeCodeCamp</span><br>(new) Responsive Web Design Certification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------services------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I offer professional web design services to help businesses and individuals create visually appealing and user-friendly websites. My expertise in HTML and CSS allows me to build custom websites from scratch, or redesign and improve existing ones. Whether you need a simple one-page site or a complex, multi-page landing page, I have the experience and knowledge to get the job done right.</p>
+            <a href="#">Learn more</a>
+
+          </div>
+          <div>
+            <i class="fa-solid fa-code-pull-request"></i>
+            <h2>Debugging your Website</h2>
+            <p>I offer professional website debugging services to help businesses and individuals troubleshoot and fix issues with their websites. Whether you're experiencing errors, design issues, or other technical problems, I have the skills and experience to identify and resolve them quickly and efficiently. My expertise in HTML and CSS allows me to thoroughly test and analyze websites to find the root cause of problems, and provide solutions that get your website back up and running smoothly. With my help, you can rest assured that your website will be functioning at its best and delivering a seamless user experience to your visitors.</p>
+            <a href="#">Learn more</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------portfolio------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="C:\Users\lucas\Downloads\Images\Webopname_3-1-2023_1784_product-landing-page-tesla.lucasperea1.repl.co.jpeg">
+            <div class="layer">
+              <h3>Tesla landing Page</h3>
+              <p>This website is a landing page for Tesla</p>
+              <a href="https://product-landing-page-tesla.lucasperea1.repl.co/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="C:\Users\lucas\Downloads\Images\Webopname_3-1-2023_17847_product-landing-page-bugatti.lucasperea1.repl.co.jpeg">
+            <div class="layer">
+              <h3>Bugatti landing Page</h3>
+              <p>This website is a landing page for Bugatti</p>
+              <a href="https://product-landing-page-bugatti.lucasperea1.repl.co/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="C:\Users\lucas\Downloads\Images\Tic-tac-toe.jfif">
+            <div class="layer">
+              <h3>Tic-Tac-Toe</h3>
+              <p>This is a Tic-Tac-Toe game you can play against your friend.</p>
+              <a href="https://replit.com/@LucasPerea1/Tic-tac-toe#main.py" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+<!-- -------------contact------------ -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> lucasperea2008@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> 31-06-42375648</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/lucasperea2008/"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.tiktok.com/@lucasperea12"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://github.com/lucasperea2008CR7"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <a href="C:\Users\lucas\Downloads\Images\My CV.odt" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Lucas. Made with <i class="fa-solid fa-heart"></i> by Lucas Perea</p>
+  </div>
+</div>
+
+
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      } 
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      } 
+
+    </script>
+
+  </body>
+</html>     
